@@ -1,0 +1,77 @@
+{% extends "layout.html" %} {% block title %} DASHBOARD {% endblock %} {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <br>
+    <br>
+    <h1 style="margin-left:16cm; font-size:1.6cm; font-family: 'Times New Roman', Times, serif; font-weight:bolder;">DASHBOARD </h1>
+
+    <div class="container" style="margin-top: 2cm; margin-bottom:2cm;">
+        <div class="card" style="width: 30rem;">
+
+            <div class="card-body" style="height:6cm;">
+                <h5 class="card-title" style="font-size: 40px;font-family:roman; text-align:center;">TEAM ENTRY</h5>
+
+                <a href="\data" class="btn btn-dark" style="margin-top: 1cm; margin-left:1.9cm; padding-left:2cm;padding-right:2cm;font-size:larger;">TEAM ENTRY</a>
+            </div>
+        </div>
+
+        <div class=" card " style="width: 30rem; margin-left:12.3cm; margin-top:-6cm;height:6cm; ">
+
+            <div class="card-body ">
+                <h5 class="card-title " style=" font-size: 40px;font-family:roman; text-align:center "> MATCH ENTRY</h5>
+
+                <a href=" \matchdata " class="btn btn-success" style="margin-top: 1cm; margin-left:1.7cm; padding-left:2cm;padding-right:2cm;font-size:larger;">MATCH ENTRY</a>
+            </div>
+        </div>
+        <div class="card" style="width: 28rem; margin-left:24.5cm; margin-top:-6cm;height:6cm; ">
+
+            <div class="card-body ">
+                <h5 class="card-title " style=" font-size: 40px;font-family:roman; text-align:center ">TEAM DELETION</h5>
+
+                <a href="\deletematch " class="btn btn-danger " style="margin-top: 1cm; margin-left:1.6cm; padding-left:2cm;padding-right:2cm;font-size:larger;">DELETE PAGE</a>
+            </div>
+        </div>
+        <div class="card" style="width: 30rem; margin-left:-0.01cm; margin-top:1cm;height:6cm; ">
+
+            <div class="card-body ">
+                <h5 class="card-title " style=" font-size: 40px;font-family:roman; text-align:center ">CAPTAIN ENTRY </h5>
+
+                <a href="\captaindetails " class="btn btn-info " style="margin-top: 1cm; margin-left:1.6cm; padding-left:2cm;padding-right:2cm;font-size:larger;">CAPTAIN ENTRY</a>
+            </div>
+        </div>
+        <div class="card" style="width: 30rem; margin-left:12.3cm; margin-top:-6cm;height:6cm; ">
+
+            <div class="card-body ">
+                <h5 class="card-title " style=" font-size: 40px;font-family:roman; text-align:center ">PLAYER ENTRY </h5>
+
+                <a href="\playerdata " class="btn btn-primary " style="margin-top: 1cm; margin-left:1.6cm; padding-left:2cm;padding-right:2cm;font-size:larger;">PLAYER ENTRY</a>
+            </div>
+        </div>
+        <div class="card" style="width: 28rem; margin-left:24.6cm; margin-top:-6cm;height:6cm; ">
+
+            <div class="card-body ">
+                <h5 class="card-title " style=" font-size: 40px;font-family:roman; text-align:center ">UMPIRE ENTRY </h5>
+
+                <a href="\umpiredata " class="btn btn-secondary " style="margin-top: 1cm; margin-left:1.6cm; padding-left:2cm;padding-right:2cm;font-size:larger;">UMPIRE ENTRY</a>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+
+
+</html>
+<br>
+<br> {% endblock %}

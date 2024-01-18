@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+
+
+
+    <h1 style="font-size:1cm; text-align:center; font-family:roman;">REPORT</h1>
+    <hr>
+    <table border="1" width="600" height="900" style=padding-top:0.2cm;text-align:center;>
+        <tr style="color:red;">
+            <td style="font-weight:700;"><b>TEAM NAME</b></td>
+            <td style="font-weight: 700;"><b>TEAM RANK</b></td>
+            <td style="font-weight: 700;"><b>NO OF WINS</b></td>
+            <td style="font-weight: 700;"><b>NO OF LOSES</b></td>
+
+            <td style="font-weight: 700;"><b>NO OF BATSMAN</b></td>
+            <td style="font-weight: 700;"><b>NO OF BOWLERS</b></td>
+
+
+        </tr>
+
+
+
+
+
+        {% for mat in teams %}
+        <tr>
+            <td>{{mat.team_name}}</td>
+            <td>{{mat.team_rank}}</td>
+            <td>{{mat.no_of_wins}}</td>
+            <td>{{mat.no_of_loses}}</td>
+            <td>{{mat.no_of_batsmen}}</td>
+            <td>{{mat.no_of_bowlers}}</td>
+            
+        </tr>
+        {% endfor %}
+
+    </table>
+
+
+</body>
+
+</html>

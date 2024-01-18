@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+.sa {
+    font-size: 30px;
+    margin-left: 4cm;
+}
+
+input {
+    border-width: 2px;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-style: outset;
+}
+
+label {
+    padding-right: 19px;
+    font-family: 'PT Serif', serif;
+    font-weight: bolder;
+}
+
+.p {
+    text-align: center;
+    margin-top: 2cm;
+    margin-left: 6cm;
+}
+
+.x {
+    margin-bottom: 1cm;
+}
+
+.z {
+    margin-bottom: 1cm;
+}
+
+#opp {
+    font-size: 2.5cm;
+    padding-bottom: -2cm;
+    margin-left: 13cm;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sj {
+    padding-left: 6cm;
+    padding-right: 6cm;
+}
+
+.su {
+    padding-top: 2cm;
+    margin-left: 6.5cm;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'PT Serif', serif;
+}

@@ -1,0 +1,62 @@
+{% extends "layout.html" %} {% block title %} DASHBOARD {% endblock %} {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <br>
+    <br>
+    <h1 style="margin-left:16cm; font-size:1.6cm; font-family: 'Times New Roman', Times, serif; font-weight:bolder;">DASHBOARD </h1>
+
+    <div class="container" style="margin-top: 2cm; margin-bottom:2cm;">
+        <div class="card" style="width: 30rem;">
+
+            <div class="card-body" style="height:6cm;">
+                <h5 class="card-title" style="font-size: 40px;font-family:roman; text-align:center;">SEARCH</h5>
+
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="btn btn-dark" style="margin-top: 1cm; margin-left:1.7cm; padding-left:2cm;padding-right:2cm;font-size:larger;">SEARCH</button>
+                    <div id="myDropdown" class="dropdown-content" style="margin-left:1.7cm; ">
+                        <a href="/matchsearch" class="btn btn-danger" style="font-size:large;font-weight:bold;font-family:'Times New Roman', Times, serif;">MATCH</a>
+                        <a href="/playersearch" class="btn btn-info" style="font-size:large;font-weight:bold;font-family:'Times New Roman', Times, serif;">PLAYER</a>
+                        <a href="/teamsearch" class="btn btn-warning" style="font-size:large;font-weight:bold;font-family:'Times New Roman', Times, serif;">TEAM</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" card " style="width: 30rem; margin-left:12.3cm; margin-top:-6cm;height:6cm; ">
+
+            <div class="card-body ">
+                <h5 class="card-title " style=" font-size: 40px;font-family:roman; text-align:center "> MATCH DATA</h5>
+
+                <a href=" \matchdetails" class="btn btn-success" style="margin-top: 1cm; margin-left:1.7cm; padding-left:2cm;padding-right:2cm;font-size:larger;">MATCH DATA</a>
+            </div>
+        </div>
+        <div class=" card " style="width: 28rem; margin-left:24.5cm; margin-top:-6cm;height:6cm; ">
+
+            <div class="card-body ">
+                <h5 class="card-title " style=" font-size: 40px;font-family:roman; text-align:center ">TEAM DATA</h5>
+
+                <a href="\teamdetails" class="btn btn-danger " style="margin-top: 1cm; margin-left:1.6cm; padding-left:2cm;padding-right:2cm;font-size:larger;">TEAM DATA</a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+
+
+</html>
+<br>
+<br> {% endblock %}

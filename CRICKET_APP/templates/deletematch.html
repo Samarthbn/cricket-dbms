@@ -1,0 +1,62 @@
+{% extends "layout.html" %} {% block title %} deleteData {% endblock %} {% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELETE DATA</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#df").submit(function(e) {
+            e.preventDefault()
+
+            dl = $("#dl").val()
+
+
+            $.get("http://127.0.0.1:8000/delt/", {
+                dl: dl
+            }).done(function(data) {
+
+
+                $("body").html(data)
+                alert("Team data has been deleted")
+
+            });
+
+        });
+    });
+</script>
+
+<h1 style="font-size: 2cm; text-align:center; font-family:Roman;font-weight:bolder; margin-bottom:1cm; margin-top:1cm;">Delete Page</h1>
+<h2 style="text-align: center; font-weight:bold;font-size:40px;font-family:Roman; margin-bottom:1cm;">Enter The Team Name To Delete</h2>
+<div id="fot" class="container" style="padding-left: 6cm; padding-right:6cm; font-size:46px;">
+
+    <form id="df">
+        <label style="font-size: 30px; font-family:Roman;" for="">TEAM NAME :</label>
+
+        <!-- <!-- <label style="font-size: 30px;" for="">TEAM ID</label> -->
+        <div style="margin-bottom: 1cm;">
+            <input class="form-control" type="text" placeholder="TEAM NAME" id="dl" style="padding-top: 10px;padding-bottom: 10px;font-size:20px;">
+        </div>
+        <input class="form-control btn-success" type="submit" name="SUBMIT" style="font-size: 23px;">
+    </form>
+</div>
+</body>
+
+
+
+
+
+
+</html>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>{% endblock %}

@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+
+
+
+<h1 style="font-size:1cm; text-align:center; font-family:roman;">REPORT</h1>
+<hr>
+<table border="1" width="600" height="900"style=padding-top:0.2cm;text-align:center;>
+<tr style="color:red;" >
+<td style="font-weight:700;"><b>MATCH DATE</b></td>
+<td style="font-weight: 700;"><b>TEAM 1 NAME</b></td>
+<td style="font-weight: 700;"><b>TEAM 2 NAME</b></td>
+<td style="font-weight: 700;"><b>WINNER</b></td>
+
+<td style="font-weight: 700;"><b>LOSER</b></td>
+<td style="font-weight: 700;"><b>VENUE</b></td>
+<td style="font-weight: 700;"><b>UMPIRE NAME</b></td>
+
+</tr>
+
+    {% for mat in matchs %}
+    <tr>
+    <td>{{mat.match_date}}</td>
+    <td>{{mat.team_1_name}}</td>
+    <td>{{ mat.team_2_name }}</td>
+    <td>{{ mat.winner }}</td>
+    <td>{{ mat.loser }}</td>
+    <td>{{ mat.venue }}</td>
+    <td>{{ mat.umpire_name }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+
+</body>
+</html>

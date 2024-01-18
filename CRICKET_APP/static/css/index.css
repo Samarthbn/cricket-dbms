@@ -1,0 +1,13 @@
+body {
+    background-image: url('/static/images/p.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: fit-content;
+}
+
+.welcome {
+    float: left;
+    text-align: center;
+    margin: 20% 40%;
+    color: white;
+}

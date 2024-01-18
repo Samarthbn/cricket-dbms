@@ -1,0 +1,89 @@
+{% extends "layout.html" %} {% block title %} Staff info {% endblock %} {% block content %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#forse').submit(function(e) {
+            e.preventDefault()
+            $.get("http://127.0.0.1:8000/matchin", {}).done(function(data) {
+
+                $('#res').html(data)
+
+            });
+
+
+        });
+    });
+
+    $(document).ready(function() {
+        $('#b').submit(function(e) {
+            e.preventDefault()
+            g = $("#g").val()
+            $.get("http://127.0.0.1:8000/report", {
+                g: g
+            }).done(function(data) {
+
+                $('body').html(data)
+
+            });
+
+
+        });
+    });
+</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.3">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    {% load static %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- CSS INDEX -->
+
+
+
+
+    <form class="example" id="forse">
+        <h2 style="margin-left:2cm; font-size:1.6cm; font-family: 'Times New Roman', Times, serif; font-weight:bolder;">Click to view the Match Data :</h2>
+        <button type="submit" style="margin-left:16cm;padding-left:4cm; padding-right:4cm; margin-top:-8cm; border-radius:10px;"><i class="fa fa-search sea"></i></button>
+    </form>
+
+    <div class="container " style="width: 100%;margin-left:-0.2cm; margin-top:2cm;padding-bottom:2cm; " id="res">
+
+
+        <table class="table">
+
+
+        </table>
+
+
+    </div>
+
+    <p style="font-size: 0.7cm;font-weight:bolder;font-family:roman;text-align:center;">CLICK THE BUTTON TO DOWNLOAD</p>
+
+    <div style="margin-left:15.5cm;">
+
+        <a href="/report"><input type="submit" value="SUBMIT" class="btn btn-success" style="padding-left: 3cm;padding-right:3cm;font-size:larger;font-weight:bolder;"></a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>
+{% endblock %}
