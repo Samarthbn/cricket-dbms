@@ -1,1 +1,1 @@
-# It is a simple cricket database management project
+# It's a cricket database management project
